@@ -1,6 +1,6 @@
 import { POOL_INIT_CODE_HASH } from './index'
 
-import { bytecode } from 'dev-bitrielswap-core/build/contracts/BitrielPool.json'
+import { bytecode } from '@bitriel/bitrielswap-core/build/contracts/BitrielPool.json'
 import { keccak256 } from '@ethersproject/solidity'
 
 // this _could_ go in constants, except that it would cost every consumer of the sdk the CPU to compute the hash

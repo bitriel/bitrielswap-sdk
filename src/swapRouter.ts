@@ -6,7 +6,7 @@ import { ADDRESS_ZERO } from './constants'
 import { PermitOptions, SelfPermit } from './selfPermit'
 import { encodeRouteToPath } from './utils'
 import { MethodParameters, toHex } from './utils/calldata'
-import { abi } from 'dev-bitrielswap-periphery/build/contracts/BitrielSwapRouter.json'
+import { abi } from '@bitriel/bitrielswap-periphery/build/contracts/BitrielSwapRouter.json'
 
 export interface FeeOptions {
   /**
