@@ -119,6 +119,13 @@ export const WETH9: { [chainId: number]: Token } = {
       'WBNB',
       'Wrapped BNB'
     ),
+    [ChainId.SEL_TESTNET]: new Token(
+      ChainId.SEL_TESTNET,
+      '0xDED2DEDf0cF48033cb50a4EF3e7587bAbc227151',
+      18,
+      'WSEL',
+      'Wrapped SEL'
+    ),
     // [ChainId.FANTOM]: new Token(
     //   ChainId.FANTOM,
     //   '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',

@@ -15,6 +15,7 @@ export const FACTORY_ADDRESS: AddressMap = {
   [ChainId.RINKEBY]: '0xd60ccFdf97985c2920d8E734c6352Aec85A9a4f3',
   [ChainId.BSC] : '',
   [ChainId.BSC_TESTNET] : '0xA3460C72E4Eb6C1851007fAc59bD37dB04056dA4',
+  [ChainId.SEL_TESTNET] : '0x3A770d51a73105AaBA81CD903f59FA991f6dAeea',
 }
 
 export const SWAP_ROUTER_ADDRESS: AddressMap = {
