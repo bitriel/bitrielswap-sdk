@@ -170,5 +170,12 @@ export const WETH = {
     18,
     'WOKT',
     'Wrapped OKExChain'
-  )
+  ),
+  [ChainId.SEL_TESTNET]: new Token(
+    ChainId.SEL_TESTNET,
+    '0x9ef99aBf4297F30aaDbA31Fb27cd2a61D349F866',
+    18,
+    'WSEL',
+    'Wrapped SEL'
+  ),
 }
