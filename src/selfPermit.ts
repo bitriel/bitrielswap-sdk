@@ -1,6 +1,6 @@
 import { BigintIsh, Token } from '@uniswap/sdk-core'
 import { Interface } from '@ethersproject/abi'
-import { abi } from '@bitriel/bitrielswap-periphery/build/contracts/ISelfPermit.json'
+import { abi } from '@bitriel/bitrielswap-periphery/artifacts/contracts/interfaces/ISelfPermit.sol/ISelfPermit.json'
 import { toHex } from './utils'
 
 export interface StandardPermitArguments {

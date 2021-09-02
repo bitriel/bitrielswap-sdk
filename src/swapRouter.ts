@@ -6,7 +6,7 @@ import { ADDRESS_ZERO } from './constants'
 import { PermitOptions, SelfPermit } from './selfPermit'
 import { encodeRouteToPath } from './utils'
 import { MethodParameters, toHex } from './utils/calldata'
-import { abi } from '@bitriel/bitrielswap-periphery/build/contracts/BitrielSwapRouter.json'
+import { abi } from '@bitriel/bitrielswap-periphery/artifacts/contracts/BitrielSwapRouter.sol/BitrielSwapRouter.json'
 
 export interface FeeOptions {
   /**
@@ -197,7 +197,7 @@ export abstract class SwapRouter extends SelfPermit {
 
         if (outputIsNative) {
           calldatas.push(
-            SwapRouter.INTERFACE.encodeFunctionData('unwrapWETH9WithFee', [
+            SwapRouter.INTERFACE.encodeFunctionData('unwrapWNATIVEWithFee', [
               toHex(totalAmountOut.quotient),
               recipient,
               fee,
@@ -217,14 +217,14 @@ export abstract class SwapRouter extends SelfPermit {
         }
       } else {
         calldatas.push(
-          SwapRouter.INTERFACE.encodeFunctionData('unwrapWETH9', [toHex(totalAmountOut.quotient), recipient])
+          SwapRouter.INTERFACE.encodeFunctionData('unwrapWNATIVE', [toHex(totalAmountOut.quotient), recipient])
         )
       }
     }
 
     // refund
     if (mustRefund) {
-      calldatas.push(SwapRouter.INTERFACE.encodeFunctionData('refundETH'))
+      calldatas.push(SwapRouter.INTERFACE.encodeFunctionData('refundNative'))
     }
 
     return {

@@ -13,7 +13,7 @@ import { Position } from './entities/position'
 import { ONE, ZERO } from './internalConstants'
 import { MethodParameters, toHex } from './utils/calldata'
 import { Interface } from '@ethersproject/abi'
-import { abi } from '@bitriel/bitrielswap-periphery/build/contracts/NonfungiblePositionManager.json'
+import { abi } from '@bitriel/bitrielswap-periphery/artifacts/contracts/NonfungiblePositionManager.sol/NonfungiblePositionManager.json'
 import { PermitOptions, SelfPermit } from './selfPermit'
 import { ADDRESS_ZERO } from './constants'
 import { Pool } from './entities'
@@ -250,7 +250,7 @@ export abstract class NonfungiblePositionManager extends SelfPermit {
 
       // we only need to refund if we're actually sending ETH
       if (JSBI.greaterThan(wrappedValue, ZERO)) {
-        calldatas.push(NonfungiblePositionManager.INTERFACE.encodeFunctionData('refundETH'))
+        calldatas.push(NonfungiblePositionManager.INTERFACE.encodeFunctionData('refundNative'))
       }
 
       value = toHex(wrappedValue)
@@ -299,7 +299,7 @@ export abstract class NonfungiblePositionManager extends SelfPermit {
         : options.expectedCurrencyOwed0.quotient
 
       calldatas.push(
-        NonfungiblePositionManager.INTERFACE.encodeFunctionData('unwrapWETH9', [toHex(ethAmount), recipient])
+        NonfungiblePositionManager.INTERFACE.encodeFunctionData('unwrapWNATIVE', [toHex(ethAmount), recipient])
       )
       calldatas.push(
         NonfungiblePositionManager.INTERFACE.encodeFunctionData('sweepToken', [
