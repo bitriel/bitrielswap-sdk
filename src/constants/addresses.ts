@@ -75,6 +75,6 @@ export const MIGRATOR_ADDRESS: AddressMap = {
   ]),
   [ChainId.RINKEBY]: '',
   [ChainId.BSC]: '',
-  [ChainId.BSC_TESTNET] : '0x9704ce7658E58173f5e9fD6E97b5256892EdC375',
+  [ChainId.BSC_TESTNET] : '0x6B1D53867630cB79954643f3E9Ae02d8024Fa13C',
   [ChainId.SEL_TESTNET] : ''
 }
