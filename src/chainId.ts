@@ -10,7 +10,7 @@ export enum ChainId {
     OPTIMISTIC_KOVAN = 69,
     BSC = 56,
     BSC_TESTNET = 97,
-    SEL_TESTNET = 2000,
+    SEL_TESTNET = 222,
     // MATIC = 137,
     // MATIC_TESTNET = 80001,
     // FANTOM = 250,
