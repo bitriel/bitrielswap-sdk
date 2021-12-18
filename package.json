@@ -1,7 +1,7 @@
 {
   "name": "@bitriel/bitrielswap-sdk",
   "license": "MIT",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "An SDK for building applications on top of BitrielSwap",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -21,8 +21,8 @@
     "prepublishOnly": "tsdx build"
   },
   "dependencies": {
-    "@bitriel/bitrielswap-core": "^1.0.0",
-    "@bitriel/bitrielswap-periphery": "^1.1.6",
+    "@bitriel/bitrielswap-core": "^1.0.1",
+    "@bitriel/bitrielswap-periphery": "^1.1.8",
     "@ethersproject/abi": "^5.0.12",
     "@ethersproject/solidity": "^5.0.9",
     "@uniswap/sdk-core": "^3.0.0-alpha.3",
