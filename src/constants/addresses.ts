@@ -73,13 +73,18 @@ export const MIGRATOR_ADDRESS: AddressMap = {
 }
 
 export const BTR_ADDRESS: AddressMap = {
-  [ChainId.BSC_TESTNET]: '0xDC34813B585aCCf2de4fe121235Be8884d18F5D4'
+  [ChainId.BSC_TESTNET]: '',
+  [ChainId.SEL_TESTNET]: '0xdd6f2F59dcE938CB3A03c5C1b184dB3AcdCC2057'
 }
 
 export const BITRIEL_GOVERNANCE_ADDRESS: AddressMap = {
-  [ChainId.BSC_TESTNET]: '0x60FFfF80b364E4a2Da8bb3D83AA6649A8D704791'
+  [ChainId.BSC_TESTNET]: ''
 }
 
 export const TIMELOCK_ADDRESS: AddressMap = {
-  [ChainId.BSC_TESTNET]: '0xA56A76FDaC720b1B934F09Aa67A3C4A2b4424569'
+  [ChainId.BSC_TESTNET]: ''
+}
+
+export const BITRIEL_FARM: AddressMap = {
+  [ChainId.SEL_TESTNET]: '0x514fA65817188abDd2cb094AF8c77A3f63AE006B'
 }
