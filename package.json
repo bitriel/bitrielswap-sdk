@@ -1,7 +1,7 @@
 {
   "name": "@bitriel/bitrielswap-sdk",
   "license": "MIT",
-  "version": "1.2.7",
+  "version": "1.2.9",
   "description": "An SDK for building applications on top of BitrielSwap",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
