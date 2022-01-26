@@ -121,7 +121,7 @@ export const WETH9: { [chainId: number]: Token } = {
     ),
     [ChainId.SEL_TESTNET]: new Token(
       ChainId.SEL_TESTNET,
-      '0x5f7C373E592CF9B6AC35a969Ae2d5cBA11FB8a75',
+      '0xf9A770027A058c8cD2bDe06b31dA0d5856e4ECeb',
       18,
       'WSEL',
       'Wrapped SEL'
