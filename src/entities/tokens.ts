@@ -119,9 +119,9 @@ export const WETH9: { [chainId: number]: Token } = {
       'WBNB',
       'Wrapped BNB'
     ),
-    [ChainId.SEL_TESTNET]: new Token(
-      ChainId.SEL_TESTNET,
-      '0xf9A770027A058c8cD2bDe06b31dA0d5856e4ECeb',
+    [ChainId.INDRA_TESTNET]: new Token(
+      ChainId.INDRA_TESTNET,
+      '0x6ccEE11c255b458575DbaD2c77c281C6Bd7eFe3f',
       18,
       'WSEL',
       'Wrapped SEL'

@@ -26,7 +26,7 @@ export const NATIVE: { [chainId in ChainId]: Currency } = {
     [ChainId.OPTIMISTIC_KOVAN]: Ether.onChain(ChainId.OPTIMISTIC_KOVAN),
     [ChainId.BSC]: Binance.onChain(ChainId.BSC),
     [ChainId.BSC_TESTNET]: Binance.onChain(ChainId.BSC_TESTNET),
-    [ChainId.SEL_TESTNET]: Selendra.onChain(ChainId.SEL_TESTNET),
+    [ChainId.INDRA_TESTNET]: Selendra.onChain(ChainId.INDRA_TESTNET),
     // [ChainId.FANTOM]: Fantom.onChain(ChainId.FANTOM),
     // [ChainId.FANTOM_TESTNET]: Fantom.onChain(ChainId.FANTOM_TESTNET),
     // [ChainId.MATIC]: Matic.onChain(ChainId.MATIC),
